@@ -100,6 +100,5 @@ async def on_voice_state_update(member, before, after):
                 await new_channel.delete()
                 print(f"🗑️ 自動刪除空房：{new_channel.name}")
                 break
-
-keep_alive()
-bot.run("MTM2MzkxODI1NDYxOTIzNDQ3NQ.GcoKiC.7_lxXhBwV7o4ANoDAD0uWKUm5LNkWeetQcf10Ms")
+import os
+bot.run(os.environ['MTM2MzkxODI1NDYxOTIzNDQ3NQ.GcoKiC.7_lxXhBwV7o4ANoDAD0uWKUm5LNkWeetQcf10Ms'])  # 注意 BOT_TOKEN 要跟 Render 環境變數名稱一致
